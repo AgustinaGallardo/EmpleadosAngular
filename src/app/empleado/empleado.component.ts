@@ -16,4 +16,8 @@ export class EmpleadoComponent {
   edad= 33;
   empresa = "AgularEmpresa";
 
+  //getEdad(){
+    //return this.edad;
+  //}
+
 }
