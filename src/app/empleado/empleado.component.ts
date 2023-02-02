@@ -14,7 +14,12 @@ export class EmpleadoComponent {
   nombre = "Juan";
   apellido = "Diaz";
   edad= 33;
-  //empresa = "AgularEmpresa";
+  empresa = "";
+
+  cambiaEmpresa(event:Event){
+    this.empresa=(<HTMLInputElement>event.target).value;
+  
+  }
 
   //getEdad(){
     //return this.edad;
@@ -24,8 +29,31 @@ export class EmpleadoComponent {
 
 usoRegistrado=false;
 
+textoDeRegistro="No existe nadie registrado";
+
 getRegistroUsuario(){
-  this.usoRegistrado=true;
+  this.usoRegistrado=false;
+}
+
+setUsuarioRegistrado(event:Event){
+
+ // alert("Usuario registrado!!");
+
+ //this.textoDeRegistro= "El usuario ya esta registrado";
+
+ alert(event.target);
+
+ if((<HTMLInputElement>event.target).value=="si"){
+
+  this.textoDeRegistro= "El usuario ya esta registrado";
+ }else{
+  this.textoDeRegistro="No existe nadie registrado";
+ }
+
+ 
+
+
+
 }
 
 }
