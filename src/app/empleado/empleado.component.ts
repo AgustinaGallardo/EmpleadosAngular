@@ -14,13 +14,9 @@ export class EmpleadoComponent {
   nombre = "Juan";
   apellido = "Diaz";
   edad= 33;
-  empresa = "";
+  empresa = "Google";
 
-  cambiaEmpresa(event:Event){
-    this.empresa=(<HTMLInputElement>event.target).value;
-  
-  }
-
+ 
   //getEdad(){
     //return this.edad;
   //}
@@ -49,9 +45,6 @@ setUsuarioRegistrado(event:Event){
  }else{
   this.textoDeRegistro="No existe nadie registrado";
  }
-
- 
-
 
 
 }

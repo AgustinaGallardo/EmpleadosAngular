@@ -3,17 +3,17 @@
 <p>Edad del Empleado: {{edad<18 ? "Menor de edad" : "Mayor de edad"}} </p>
 <p>Nombre de la Empresa: {{empresa}} </p>
 
-Ingrese la empresa : <input type="text" (input) ="cambiaEmpresa($event)">
+Ingrese la empresa : <input type="text" [(ngModel)]="empresa">
 
 <!--Ingrese el nombre de la empresa: <input type="text" #empresa (keyup)="0">
-
  Con Boton: 
 
 <input type="button" value="Dale!" (click)="llamaEmpresa(empresa.value)"/>
-
  -->
+ 
   <br/>
   <br/>
+
 {{textoDeRegistro}}<br/>
   Registrado: <input type="radio" value ="si" name="nRegistro" id="Registro" [checked]="usoRegistrado" (click)="setUsuarioRegistrado($event)"><br/>
   No registrado: <input type="radio" value ="no" name="nRegistro" (click)="setUsuarioRegistrado($event)">
