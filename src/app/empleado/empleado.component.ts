@@ -22,6 +22,12 @@ export class EmpleadoComponent {
 
 //llamaEmpresa(value:String){
 
+usoRegistrado=false;
+
+getRegistroUsuario(){
+  this.usoRegistrado=true;
+}
+
 }
 
 

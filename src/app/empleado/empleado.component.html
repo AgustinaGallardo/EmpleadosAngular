@@ -5,12 +5,13 @@
 
 Ingrese el nombre de la empresa: <input type="text" #empresa (keyup)="0">
 
-<br/>
-<br/>
-
-
 <!-- Con Boton: 
 
 <input type="button" value="Dale!" (click)="llamaEmpresa(empresa.value)"/>
 
  -->
+  <br/>
+  <br/>
+
+  Registrado: <input type="checkbox" id="Registro" [checked]="usoRegistrado">
+  {{getRegistroUsuario}}
