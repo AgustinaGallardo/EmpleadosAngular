@@ -14,10 +14,15 @@ export class EmpleadoComponent {
   nombre = "Juan";
   apellido = "Diaz";
   edad= 33;
-  empresa = "AgularEmpresa";
+  //empresa = "AgularEmpresa";
 
   //getEdad(){
     //return this.edad;
   //}
 
+//llamaEmpresa(value:String){
+
 }
+
+
+
